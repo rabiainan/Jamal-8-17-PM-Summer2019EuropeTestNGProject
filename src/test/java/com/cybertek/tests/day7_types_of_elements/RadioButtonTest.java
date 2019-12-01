@@ -40,7 +40,7 @@ public class RadioButtonTest {
 
         Assert.assertTrue(redRadioButton.isSelected(),"verif  that red is selected");
 
-        driver.quit();
+       // driver.quit();
 
     }
 

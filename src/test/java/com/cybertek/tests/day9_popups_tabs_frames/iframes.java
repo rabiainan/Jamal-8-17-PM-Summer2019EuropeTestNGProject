@@ -75,6 +75,12 @@ public class iframes {
         //switch to frame bottom
         driver.switchTo().frame(1);
         System.out.println(driver.findElement(By.tagName("body")).getText());
+
+
+        /**
+         *
+         */
+
     }
 }
 
