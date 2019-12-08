@@ -15,13 +15,14 @@ public class ImplicitWait {
     @BeforeMethod
     public void setUpMethod(){
         driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
         driver.manage().window().maximize();
     }
     @AfterMethod
     public void tearDownMethod() throws InterruptedException {
         Thread.sleep(2000);
-        driver.quit();
+        //driver.quit();
     }
     @Test
     public void test1() throws InterruptedException {

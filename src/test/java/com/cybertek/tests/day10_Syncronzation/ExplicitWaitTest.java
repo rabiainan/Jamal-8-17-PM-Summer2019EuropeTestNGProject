@@ -20,7 +20,7 @@ public class ExplicitWaitTest {
     @AfterMethod
     public void tearDownMethod() throws InterruptedException {
 
-        driver.quit();
+        //driver.quit();
     }
     @Test
     public void test1() throws InterruptedException {
@@ -35,6 +35,7 @@ public class ExplicitWaitTest {
         //call until method from wait object
         //waiting for the specific element to be visible (up to 10 sec)
         wait.until(ExpectedConditions.visibilityOf(username));
+
 
         //sending some username
         username.sendKeys("MikeSmith");

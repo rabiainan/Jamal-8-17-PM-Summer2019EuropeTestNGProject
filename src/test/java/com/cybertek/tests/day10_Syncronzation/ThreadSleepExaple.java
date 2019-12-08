@@ -15,16 +15,15 @@ public class ThreadSleepExaple {
     @AfterMethod
     public void tearDownMethod() throws InterruptedException {
         Thread.sleep(3000);
-        driver.quit();
+       // driver.quit();
     }
     @Test
     public  void test1() throws InterruptedException {
 
         driver.get("http://practice.cybertekschool.com/dynamic_loading/3");
 
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         driver.findElement(By.id("username")).sendKeys("mike smith");
-
 
 
 

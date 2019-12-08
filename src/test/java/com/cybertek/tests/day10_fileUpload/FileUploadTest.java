@@ -25,12 +25,12 @@ public class FileUploadTest {
        // driver.quit();
     }
   @Test
-    public  void tets(){
+    public  void test(){
 
         driver.get("http://practice.cybertekschool.com/upload");
         driver.findElement(By.name("file")).sendKeys("C:\\Users\\rabia\\Desktop\\file.txt");
         driver.findElement(By.id("file-submit")).click();
-        String actualFilename=driver.findElement(By.id("upload-files")).getText();
+        String actualFilename=driver.findElement(By.id("uploaded-files")).getText();
 
       Assert.assertEquals(actualFilename,"file.txt","verify file name");
   }
